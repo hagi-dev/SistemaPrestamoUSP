@@ -1,0 +1,14 @@
+C:\Users\hagi-dev\Desktop\SolucionesInformaticas\Semana10\SistemaPrestamoUSP\bin\Debug\SistemaPrestamoUSP.exe.config
+C:\Users\hagi-dev\Desktop\SolucionesInformaticas\Semana10\SistemaPrestamoUSP\bin\Debug\SistemaPrestamoUSP.exe
+C:\Users\hagi-dev\Desktop\SolucionesInformaticas\Semana10\SistemaPrestamoUSP\bin\Debug\SistemaPrestamoUSP.pdb
+C:\Users\hagi-dev\Desktop\SolucionesInformaticas\Semana10\SistemaPrestamoUSP\obj\Debug\SistemaPrestamoUSP.csprojAssemblyReference.cache
+C:\Users\hagi-dev\Desktop\SolucionesInformaticas\Semana10\SistemaPrestamoUSP\obj\Debug\SistemaPrestamoUSP.Properties.Resources.resources
+C:\Users\hagi-dev\Desktop\SolucionesInformaticas\Semana10\SistemaPrestamoUSP\obj\Debug\SistemaPrestamoUSP.SPUMenu.resources
+C:\Users\hagi-dev\Desktop\SolucionesInformaticas\Semana10\SistemaPrestamoUSP\obj\Debug\SistemaPrestamoUSP.csproj.GenerateResource.cache
+C:\Users\hagi-dev\Desktop\SolucionesInformaticas\Semana10\SistemaPrestamoUSP\obj\Debug\SistemaPrestamoUSP.csproj.CoreCompileInputs.cache
+C:\Users\hagi-dev\Desktop\SolucionesInformaticas\Semana10\SistemaPrestamoUSP\obj\Debug\SistemaPrestamoUSP.exe
+C:\Users\hagi-dev\Desktop\SolucionesInformaticas\Semana10\SistemaPrestamoUSP\obj\Debug\SistemaPrestamoUSP.pdb
+C:\Users\hagi-dev\Desktop\SolucionesInformaticas\Semana10\SistemaPrestamoUSP\bin\Debug\Guna.UI.dll
+C:\Users\hagi-dev\Desktop\SolucionesInformaticas\Semana10\SistemaPrestamoUSP\bin\Debug\Guna.UI2.dll
+C:\Users\hagi-dev\Desktop\SolucionesInformaticas\Semana10\SistemaPrestamoUSP\bin\Debug\MySql.Data.dll
+C:\Users\hagi-dev\Desktop\SolucionesInformaticas\Semana10\SistemaPrestamoUSP\obj\Debug\SistemaPrestamoUSP.csproj.CopyComplete
