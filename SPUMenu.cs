@@ -82,11 +82,6 @@ namespace SistemaPrestamoUSP
             }
         }
 
-        private void btnCerrar_Click(object sender, EventArgs e)
-        {
-            this.Dispose();
-        }
-
         private void btnInicio_MouseHover(object sender, EventArgs e)
         {
               //posicionPanelSeleccionadorPrincipal(443, 35, 435, 39);
@@ -160,36 +155,67 @@ namespace SistemaPrestamoUSP
         {
             posicionPanelSeleccionadorPrincipal(634, 37, 630, 40);
             pnlRegistroModuloYUnidad.Visible = false;
+            abrirafaormulario(new RegistrarModulo());
         }
 
         private void btnRegistroUnidadDidactica_Click(object sender, EventArgs e)
         {
             posicionPanelSeleccionadorPrincipal(634, 37, 630, 40);
             pnlRegistroModuloYUnidad.Visible = false;
+            abrirafaormulario(new RegistroUnidadDidactica());
         }
 
         private void btnRegistroTipoMaterial_Click(object sender, EventArgs e)
         {
             posicionPanelSeleccionadorPrincipal(832, 37, 828, 40);
             pnlRegistroMaterialYTipo.Visible = false;
+            abrirafaormulario(new RegistroTipoMaterial());
         }
 
         private void btnRegistrarMaterial_Click(object sender, EventArgs e)
         {
             posicionPanelSeleccionadorPrincipal(832, 37, 828, 40);
             pnlRegistroMaterialYTipo.Visible = false;
+            abrirafaormulario(new RegistroMaterial());
         }
 
         private void btnRegistroAlumno_Click(object sender, EventArgs e)
         {
             posicionPanelSeleccionadorPrincipal(1028, 36, 1024, 39);
             pnlRegistroPrestamoYAlumno.Visible = false;
+            abrirafaormulario(new RegistroEstudiante());
         }
 
         private void btnRegistroPrestamo_Click(object sender, EventArgs e)
         {
             posicionPanelSeleccionadorPrincipal(1028, 36, 1024, 39);
             pnlRegistroPrestamoYAlumno.Visible = false;
+            abrirafaormulario(new RegistroPrestamoMaterial());
+        }
+
+        private void abrirafaormulario(object formularioHijo)
+        {
+
+            if (this.pnlContenedorPrincipal.Controls.Count > 0)
+                this.pnlContenedorPrincipal.Controls.RemoveAt(0);
+            Form formularioVisible = formularioHijo as Form;
+            formularioVisible.TopLevel = false;
+            formularioVisible.Dock = DockStyle.Fill;
+            this.pnlContenedorPrincipal.Controls.Add(formularioVisible);
+            this.pnlContenedorPrincipal.Tag = formularioVisible;
+            formularioVisible.Show();
+
+        }
+
+        private void btnCerrar_Click_1(object sender, EventArgs e)
+        {
+
+            this.Dispose();
+        }
+
+        private void btnMinimizar_Click_1(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

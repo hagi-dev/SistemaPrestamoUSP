@@ -12,3 +12,9 @@ C:\Users\hagi-dev\Desktop\SolucionesInformaticas\Semana10\SistemaPrestamoUSP\bin
 C:\Users\hagi-dev\Desktop\SolucionesInformaticas\Semana10\SistemaPrestamoUSP\bin\Debug\Guna.UI2.dll
 C:\Users\hagi-dev\Desktop\SolucionesInformaticas\Semana10\SistemaPrestamoUSP\bin\Debug\MySql.Data.dll
 C:\Users\hagi-dev\Desktop\SolucionesInformaticas\Semana10\SistemaPrestamoUSP\obj\Debug\SistemaPrestamoUSP.csproj.CopyComplete
+C:\Users\hagi-dev\Desktop\SolucionesInformaticas\Semana10\SistemaPrestamoUSP\obj\Debug\SistemaPrestamoUSP.RegistrarModulo.resources
+C:\Users\hagi-dev\Desktop\SolucionesInformaticas\Semana10\SistemaPrestamoUSP\obj\Debug\SistemaPrestamoUSP.RegistroUnidadDidactica.resources
+C:\Users\hagi-dev\Desktop\SolucionesInformaticas\Semana10\SistemaPrestamoUSP\obj\Debug\SistemaPrestamoUSP.RegistroEstudiante.resources
+C:\Users\hagi-dev\Desktop\SolucionesInformaticas\Semana10\SistemaPrestamoUSP\obj\Debug\SistemaPrestamoUSP.RegistroMaterial.resources
+C:\Users\hagi-dev\Desktop\SolucionesInformaticas\Semana10\SistemaPrestamoUSP\obj\Debug\SistemaPrestamoUSP.RegistroTipoMaterial.resources
+C:\Users\hagi-dev\Desktop\SolucionesInformaticas\Semana10\SistemaPrestamoUSP\obj\Debug\SistemaPrestamoUSP.RegistroPrestamoMaterial.resources

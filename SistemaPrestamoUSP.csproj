@@ -60,6 +60,42 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="RegistrarModulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarModulo.Designer.cs">
+      <DependentUpon>RegistrarModulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroEstudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroEstudiante.Designer.cs">
+      <DependentUpon>RegistroEstudiante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroMaterial.Designer.cs">
+      <DependentUpon>RegistroMaterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroPrestamoMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroPrestamoMaterial.Designer.cs">
+      <DependentUpon>RegistroPrestamoMaterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroTipoMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroTipoMaterial.Designer.cs">
+      <DependentUpon>RegistroTipoMaterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroUnidadDidactica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroUnidadDidactica.Designer.cs">
+      <DependentUpon>RegistroUnidadDidactica.cs</DependentUpon>
+    </Compile>
     <Compile Include="SPUMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +104,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="RegistrarModulo.resx">
+      <DependentUpon>RegistrarModulo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -77,6 +116,21 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RegistroEstudiante.resx">
+      <DependentUpon>RegistroEstudiante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroMaterial.resx">
+      <DependentUpon>RegistroMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroPrestamoMaterial.resx">
+      <DependentUpon>RegistroPrestamoMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroTipoMaterial.resx">
+      <DependentUpon>RegistroTipoMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroUnidadDidactica.resx">
+      <DependentUpon>RegistroUnidadDidactica.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SPUMenu.resx">
       <DependentUpon>SPUMenu.cs</DependentUpon>
     </EmbeddedResource>
