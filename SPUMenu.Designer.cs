@@ -29,218 +29,334 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.gunaElipsePanel1 = new Guna.UI.WinForms.GunaElipsePanel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pnlDiseñoBotonInicio = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pnlSeleccionadorInicio = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnPrestamo = new Guna.UI.WinForms.GunaButton();
-            this.btnMateriales = new Guna.UI.WinForms.GunaButton();
-            this.btnModulos = new Guna.UI.WinForms.GunaButton();
-            this.btnInicio = new Guna.UI.WinForms.GunaButton();
             this.Shadow = new Guna.UI.WinForms.GunaDragControl(this.components);
-            this.pnlRegistroModulos = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.gunaButton5 = new Guna.UI.WinForms.GunaButton();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.gunaButton4 = new Guna.UI.WinForms.GunaButton();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.pnlRegistroMaterial = new System.Windows.Forms.Panel();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.panel18 = new System.Windows.Forms.Panel();
-            this.gunaButton8 = new Guna.UI.WinForms.GunaButton();
-            this.panel21 = new System.Windows.Forms.Panel();
-            this.gunaButton9 = new Guna.UI.WinForms.GunaButton();
-            this.panel22 = new System.Windows.Forms.Panel();
-            this.pnlRegistroPrestamo = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.gunaButton6 = new Guna.UI.WinForms.GunaButton();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.gunaButton7 = new Guna.UI.WinForms.GunaButton();
-            this.panel19 = new System.Windows.Forms.Panel();
-            this.gunaElipsePanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.pnlRegistroModulos.SuspendLayout();
-            this.pnlRegistroMaterial.SuspendLayout();
-            this.pnlRegistroPrestamo.SuspendLayout();
+            this.pnlRegistroModuloYUnidad = new System.Windows.Forms.Panel();
+            this.btnRegistroUnidadDidactica = new Guna.UI.WinForms.GunaButton();
+            this.btnRegistroModulo = new Guna.UI.WinForms.GunaButton();
+            this.btnModuloYUnidad = new Guna.UI.WinForms.GunaButton();
+            this.pnlRegistroMaterialYTipo = new System.Windows.Forms.Panel();
+            this.btnRegistrarMaterial = new Guna.UI.WinForms.GunaButton();
+            this.btnRegistroTipoMaterial = new Guna.UI.WinForms.GunaButton();
+            this.pnlRegistroPrestamoYAlumno = new System.Windows.Forms.Panel();
+            this.btnRegistroPrestamo = new Guna.UI.WinForms.GunaButton();
+            this.btnRegistroAlumno = new Guna.UI.WinForms.GunaButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pnlSeleccionPrincipal1 = new System.Windows.Forms.Panel();
+            this.btnPrestamoYAlumno = new Guna.UI.WinForms.GunaButton();
+            this.btnMaterialTipo = new Guna.UI.WinForms.GunaButton();
+            this.btnInicio = new Guna.UI.WinForms.GunaButton();
+            this.btnCerrar = new Guna.UI.WinForms.GunaButton();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.btnPerfil = new Guna.UI.WinForms.GunaButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pnlRegistroModuloYUnidad.SuspendLayout();
+            this.pnlRegistroMaterialYTipo.SuspendLayout();
+            this.pnlRegistroPrestamoYAlumno.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // gunaElipsePanel1
+            // Shadow
             // 
-            this.gunaElipsePanel1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaElipsePanel1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(96)))), ((int)(((byte)(167)))));
-            this.gunaElipsePanel1.Controls.Add(this.panel6);
-            this.gunaElipsePanel1.Controls.Add(this.panel4);
-            this.gunaElipsePanel1.Controls.Add(this.panel2);
-            this.gunaElipsePanel1.Controls.Add(this.pnlDiseñoBotonInicio);
-            this.gunaElipsePanel1.Controls.Add(this.panel5);
-            this.gunaElipsePanel1.Controls.Add(this.panel3);
-            this.gunaElipsePanel1.Controls.Add(this.panel1);
-            this.gunaElipsePanel1.Controls.Add(this.pnlSeleccionadorInicio);
-            this.gunaElipsePanel1.Controls.Add(this.pictureBox1);
-            this.gunaElipsePanel1.Controls.Add(this.btnPrestamo);
-            this.gunaElipsePanel1.Controls.Add(this.btnMateriales);
-            this.gunaElipsePanel1.Controls.Add(this.btnModulos);
-            this.gunaElipsePanel1.Controls.Add(this.btnInicio);
-            this.gunaElipsePanel1.Location = new System.Drawing.Point(45, 624);
-            this.gunaElipsePanel1.Name = "gunaElipsePanel1";
-            this.gunaElipsePanel1.Radius = 25;
-            this.gunaElipsePanel1.Size = new System.Drawing.Size(1140, 56);
-            this.gunaElipsePanel1.TabIndex = 0;
+            this.Shadow.TargetControl = this;
             // 
-            // panel6
+            // pnlRegistroModuloYUnidad
             // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(96)))), ((int)(((byte)(167)))));
-            this.panel6.Location = new System.Drawing.Point(903, 45);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(191, 12);
-            this.panel6.TabIndex = 2;
+            this.pnlRegistroModuloYUnidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(96)))), ((int)(((byte)(167)))));
+            this.pnlRegistroModuloYUnidad.Controls.Add(this.btnRegistroUnidadDidactica);
+            this.pnlRegistroModuloYUnidad.Controls.Add(this.btnRegistroModulo);
+            this.pnlRegistroModuloYUnidad.Location = new System.Drawing.Point(659, 521);
+            this.pnlRegistroModuloYUnidad.Name = "pnlRegistroModuloYUnidad";
+            this.pnlRegistroModuloYUnidad.Size = new System.Drawing.Size(167, 93);
+            this.pnlRegistroModuloYUnidad.TabIndex = 1;
             // 
-            // panel4
+            // btnRegistroUnidadDidactica
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(96)))), ((int)(((byte)(167)))));
-            this.panel4.Location = new System.Drawing.Point(715, 47);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(176, 10);
-            this.panel4.TabIndex = 2;
+            this.btnRegistroUnidadDidactica.AnimationHoverSpeed = 0.07F;
+            this.btnRegistroUnidadDidactica.AnimationSpeed = 0.03F;
+            this.btnRegistroUnidadDidactica.BackColor = System.Drawing.Color.Transparent;
+            this.btnRegistroUnidadDidactica.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(96)))), ((int)(((byte)(167)))));
+            this.btnRegistroUnidadDidactica.BorderColor = System.Drawing.Color.Blue;
+            this.btnRegistroUnidadDidactica.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnRegistroUnidadDidactica.FocusedColor = System.Drawing.Color.Empty;
+            this.btnRegistroUnidadDidactica.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistroUnidadDidactica.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(214)))), ((int)(((byte)(32)))));
+            this.btnRegistroUnidadDidactica.Image = null;
+            this.btnRegistroUnidadDidactica.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnRegistroUnidadDidactica.Location = new System.Drawing.Point(0, 51);
+            this.btnRegistroUnidadDidactica.Name = "btnRegistroUnidadDidactica";
+            this.btnRegistroUnidadDidactica.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.btnRegistroUnidadDidactica.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(198)))), ((int)(((byte)(41)))));
+            this.btnRegistroUnidadDidactica.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnRegistroUnidadDidactica.OnHoverImage = null;
+            this.btnRegistroUnidadDidactica.OnPressedColor = System.Drawing.Color.Black;
+            this.btnRegistroUnidadDidactica.Size = new System.Drawing.Size(167, 29);
+            this.btnRegistroUnidadDidactica.TabIndex = 0;
+            this.btnRegistroUnidadDidactica.Text = "Registro Unidad";
+            this.btnRegistroUnidadDidactica.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnRegistroUnidadDidactica.Click += new System.EventHandler(this.btnRegistroUnidadDidactica_Click);
+            // 
+            // btnRegistroModulo
+            // 
+            this.btnRegistroModulo.AnimationHoverSpeed = 0.07F;
+            this.btnRegistroModulo.AnimationSpeed = 0.03F;
+            this.btnRegistroModulo.BackColor = System.Drawing.Color.Transparent;
+            this.btnRegistroModulo.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(96)))), ((int)(((byte)(167)))));
+            this.btnRegistroModulo.BorderColor = System.Drawing.Color.Blue;
+            this.btnRegistroModulo.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnRegistroModulo.FocusedColor = System.Drawing.Color.Empty;
+            this.btnRegistroModulo.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistroModulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(214)))), ((int)(((byte)(32)))));
+            this.btnRegistroModulo.Image = null;
+            this.btnRegistroModulo.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnRegistroModulo.Location = new System.Drawing.Point(-3, 3);
+            this.btnRegistroModulo.Name = "btnRegistroModulo";
+            this.btnRegistroModulo.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.btnRegistroModulo.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(198)))), ((int)(((byte)(41)))));
+            this.btnRegistroModulo.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnRegistroModulo.OnHoverImage = null;
+            this.btnRegistroModulo.OnPressedColor = System.Drawing.Color.Black;
+            this.btnRegistroModulo.Size = new System.Drawing.Size(167, 29);
+            this.btnRegistroModulo.TabIndex = 0;
+            this.btnRegistroModulo.Text = "Registro Modulo";
+            this.btnRegistroModulo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnRegistroModulo.Click += new System.EventHandler(this.btnRegistroModulo_Click);
+            // 
+            // btnModuloYUnidad
+            // 
+            this.btnModuloYUnidad.AnimationHoverSpeed = 0.07F;
+            this.btnModuloYUnidad.AnimationSpeed = 0.03F;
+            this.btnModuloYUnidad.BackColor = System.Drawing.Color.Transparent;
+            this.btnModuloYUnidad.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(96)))), ((int)(((byte)(167)))));
+            this.btnModuloYUnidad.BorderColor = System.Drawing.Color.Blue;
+            this.btnModuloYUnidad.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnModuloYUnidad.FocusedColor = System.Drawing.Color.Empty;
+            this.btnModuloYUnidad.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModuloYUnidad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(214)))), ((int)(((byte)(32)))));
+            this.btnModuloYUnidad.Image = null;
+            this.btnModuloYUnidad.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnModuloYUnidad.Location = new System.Drawing.Point(634, -4);
+            this.btnModuloYUnidad.Name = "btnModuloYUnidad";
+            this.btnModuloYUnidad.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.btnModuloYUnidad.OnHoverBorderColor = System.Drawing.Color.Transparent;
+            this.btnModuloYUnidad.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(214)))), ((int)(((byte)(32)))));
+            this.btnModuloYUnidad.OnHoverImage = null;
+            this.btnModuloYUnidad.OnPressedColor = System.Drawing.Color.Black;
+            this.btnModuloYUnidad.Size = new System.Drawing.Size(167, 53);
+            this.btnModuloYUnidad.TabIndex = 0;
+            this.btnModuloYUnidad.Text = "Modulo y Unidad";
+            this.btnModuloYUnidad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnModuloYUnidad.Click += new System.EventHandler(this.btnModuloYUnidad_Click_1);
+            this.btnModuloYUnidad.MouseHover += new System.EventHandler(this.btnModuloYUnidad_MouseHover);
+            // 
+            // pnlRegistroMaterialYTipo
+            // 
+            this.pnlRegistroMaterialYTipo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(96)))), ((int)(((byte)(167)))));
+            this.pnlRegistroMaterialYTipo.Controls.Add(this.btnRegistrarMaterial);
+            this.pnlRegistroMaterialYTipo.Controls.Add(this.btnRegistroTipoMaterial);
+            this.pnlRegistroMaterialYTipo.Location = new System.Drawing.Point(861, 519);
+            this.pnlRegistroMaterialYTipo.Name = "pnlRegistroMaterialYTipo";
+            this.pnlRegistroMaterialYTipo.Size = new System.Drawing.Size(167, 95);
+            this.pnlRegistroMaterialYTipo.TabIndex = 1;
+            // 
+            // btnRegistrarMaterial
+            // 
+            this.btnRegistrarMaterial.AnimationHoverSpeed = 0.07F;
+            this.btnRegistrarMaterial.AnimationSpeed = 0.03F;
+            this.btnRegistrarMaterial.BackColor = System.Drawing.Color.Transparent;
+            this.btnRegistrarMaterial.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(96)))), ((int)(((byte)(167)))));
+            this.btnRegistrarMaterial.BorderColor = System.Drawing.Color.Blue;
+            this.btnRegistrarMaterial.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnRegistrarMaterial.FocusedColor = System.Drawing.Color.Empty;
+            this.btnRegistrarMaterial.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrarMaterial.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(214)))), ((int)(((byte)(32)))));
+            this.btnRegistrarMaterial.Image = null;
+            this.btnRegistrarMaterial.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnRegistrarMaterial.Location = new System.Drawing.Point(0, 52);
+            this.btnRegistrarMaterial.Name = "btnRegistrarMaterial";
+            this.btnRegistrarMaterial.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.btnRegistrarMaterial.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(198)))), ((int)(((byte)(41)))));
+            this.btnRegistrarMaterial.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnRegistrarMaterial.OnHoverImage = null;
+            this.btnRegistrarMaterial.OnPressedColor = System.Drawing.Color.Black;
+            this.btnRegistrarMaterial.Size = new System.Drawing.Size(167, 29);
+            this.btnRegistrarMaterial.TabIndex = 0;
+            this.btnRegistrarMaterial.Text = "Registro Material";
+            this.btnRegistrarMaterial.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnRegistrarMaterial.Click += new System.EventHandler(this.btnRegistrarMaterial_Click);
+            // 
+            // btnRegistroTipoMaterial
+            // 
+            this.btnRegistroTipoMaterial.AnimationHoverSpeed = 0.07F;
+            this.btnRegistroTipoMaterial.AnimationSpeed = 0.03F;
+            this.btnRegistroTipoMaterial.BackColor = System.Drawing.Color.Transparent;
+            this.btnRegistroTipoMaterial.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(96)))), ((int)(((byte)(167)))));
+            this.btnRegistroTipoMaterial.BorderColor = System.Drawing.Color.Blue;
+            this.btnRegistroTipoMaterial.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnRegistroTipoMaterial.FocusedColor = System.Drawing.Color.Empty;
+            this.btnRegistroTipoMaterial.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistroTipoMaterial.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(214)))), ((int)(((byte)(32)))));
+            this.btnRegistroTipoMaterial.Image = null;
+            this.btnRegistroTipoMaterial.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnRegistroTipoMaterial.Location = new System.Drawing.Point(0, 2);
+            this.btnRegistroTipoMaterial.Name = "btnRegistroTipoMaterial";
+            this.btnRegistroTipoMaterial.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.btnRegistroTipoMaterial.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(198)))), ((int)(((byte)(41)))));
+            this.btnRegistroTipoMaterial.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnRegistroTipoMaterial.OnHoverImage = null;
+            this.btnRegistroTipoMaterial.OnPressedColor = System.Drawing.Color.Black;
+            this.btnRegistroTipoMaterial.Size = new System.Drawing.Size(167, 29);
+            this.btnRegistroTipoMaterial.TabIndex = 0;
+            this.btnRegistroTipoMaterial.Text = "Registro Tipo ";
+            this.btnRegistroTipoMaterial.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnRegistroTipoMaterial.Click += new System.EventHandler(this.btnRegistroTipoMaterial_Click);
+            // 
+            // pnlRegistroPrestamoYAlumno
+            // 
+            this.pnlRegistroPrestamoYAlumno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(96)))), ((int)(((byte)(167)))));
+            this.pnlRegistroPrestamoYAlumno.Controls.Add(this.btnRegistroPrestamo);
+            this.pnlRegistroPrestamoYAlumno.Controls.Add(this.btnRegistroAlumno);
+            this.pnlRegistroPrestamoYAlumno.Location = new System.Drawing.Point(1056, 521);
+            this.pnlRegistroPrestamoYAlumno.Name = "pnlRegistroPrestamoYAlumno";
+            this.pnlRegistroPrestamoYAlumno.Size = new System.Drawing.Size(182, 93);
+            this.pnlRegistroPrestamoYAlumno.TabIndex = 1;
+            // 
+            // btnRegistroPrestamo
+            // 
+            this.btnRegistroPrestamo.AnimationHoverSpeed = 0.07F;
+            this.btnRegistroPrestamo.AnimationSpeed = 0.03F;
+            this.btnRegistroPrestamo.BackColor = System.Drawing.Color.Transparent;
+            this.btnRegistroPrestamo.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(96)))), ((int)(((byte)(167)))));
+            this.btnRegistroPrestamo.BorderColor = System.Drawing.Color.Blue;
+            this.btnRegistroPrestamo.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnRegistroPrestamo.FocusedColor = System.Drawing.Color.Empty;
+            this.btnRegistroPrestamo.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistroPrestamo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(214)))), ((int)(((byte)(32)))));
+            this.btnRegistroPrestamo.Image = null;
+            this.btnRegistroPrestamo.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnRegistroPrestamo.Location = new System.Drawing.Point(7, 52);
+            this.btnRegistroPrestamo.Name = "btnRegistroPrestamo";
+            this.btnRegistroPrestamo.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.btnRegistroPrestamo.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(198)))), ((int)(((byte)(41)))));
+            this.btnRegistroPrestamo.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnRegistroPrestamo.OnHoverImage = null;
+            this.btnRegistroPrestamo.OnPressedColor = System.Drawing.Color.Black;
+            this.btnRegistroPrestamo.Size = new System.Drawing.Size(167, 29);
+            this.btnRegistroPrestamo.TabIndex = 0;
+            this.btnRegistroPrestamo.Text = "Registro Prestamo";
+            this.btnRegistroPrestamo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnRegistroPrestamo.Click += new System.EventHandler(this.btnRegistroPrestamo_Click);
+            // 
+            // btnRegistroAlumno
+            // 
+            this.btnRegistroAlumno.AnimationHoverSpeed = 0.07F;
+            this.btnRegistroAlumno.AnimationSpeed = 0.03F;
+            this.btnRegistroAlumno.BackColor = System.Drawing.Color.Transparent;
+            this.btnRegistroAlumno.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(96)))), ((int)(((byte)(167)))));
+            this.btnRegistroAlumno.BorderColor = System.Drawing.Color.Blue;
+            this.btnRegistroAlumno.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnRegistroAlumno.FocusedColor = System.Drawing.Color.Empty;
+            this.btnRegistroAlumno.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistroAlumno.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(214)))), ((int)(((byte)(32)))));
+            this.btnRegistroAlumno.Image = null;
+            this.btnRegistroAlumno.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnRegistroAlumno.Location = new System.Drawing.Point(7, 2);
+            this.btnRegistroAlumno.Name = "btnRegistroAlumno";
+            this.btnRegistroAlumno.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.btnRegistroAlumno.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(198)))), ((int)(((byte)(41)))));
+            this.btnRegistroAlumno.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnRegistroAlumno.OnHoverImage = null;
+            this.btnRegistroAlumno.OnPressedColor = System.Drawing.Color.Black;
+            this.btnRegistroAlumno.Size = new System.Drawing.Size(167, 29);
+            this.btnRegistroAlumno.TabIndex = 0;
+            this.btnRegistroAlumno.Text = "Registro Alumno";
+            this.btnRegistroAlumno.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnRegistroAlumno.Click += new System.EventHandler(this.btnRegistroAlumno_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(96)))), ((int)(((byte)(167)))));
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.pnlSeleccionPrincipal1);
+            this.panel1.Controls.Add(this.btnPrestamoYAlumno);
+            this.panel1.Controls.Add(this.btnMaterialTipo);
+            this.panel1.Controls.Add(this.btnInicio);
+            this.panel1.Controls.Add(this.btnModuloYUnidad);
+            this.panel1.Location = new System.Drawing.Point(24, 613);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1214, 47);
+            this.panel1.TabIndex = 2;
+            this.panel1.MouseHover += new System.EventHandler(this.panel1_MouseHover);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(96)))), ((int)(((byte)(167)))));
-            this.panel2.Location = new System.Drawing.Point(525, 47);
+            this.panel2.Location = new System.Drawing.Point(435, 39);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(176, 10);
+            this.panel2.Size = new System.Drawing.Size(176, 16);
             this.panel2.TabIndex = 2;
             // 
-            // pnlDiseñoBotonInicio
+            // pnlSeleccionPrincipal1
             // 
-            this.pnlDiseñoBotonInicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(96)))), ((int)(((byte)(167)))));
-            this.pnlDiseñoBotonInicio.Location = new System.Drawing.Point(334, 47);
-            this.pnlDiseñoBotonInicio.Name = "pnlDiseñoBotonInicio";
-            this.pnlDiseñoBotonInicio.Size = new System.Drawing.Size(176, 10);
-            this.pnlDiseñoBotonInicio.TabIndex = 2;
+            this.pnlSeleccionPrincipal1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(214)))), ((int)(((byte)(32)))));
+            this.pnlSeleccionPrincipal1.Location = new System.Drawing.Point(443, 35);
+            this.pnlSeleccionPrincipal1.Name = "pnlSeleccionPrincipal1";
+            this.pnlSeleccionPrincipal1.Size = new System.Drawing.Size(168, 20);
+            this.pnlSeleccionPrincipal1.TabIndex = 1;
             // 
-            // panel5
+            // btnPrestamoYAlumno
             // 
-            this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Location = new System.Drawing.Point(911, 41);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(183, 22);
-            this.panel5.TabIndex = 1;
+            this.btnPrestamoYAlumno.AnimationHoverSpeed = 0.07F;
+            this.btnPrestamoYAlumno.AnimationSpeed = 0.03F;
+            this.btnPrestamoYAlumno.BackColor = System.Drawing.Color.Transparent;
+            this.btnPrestamoYAlumno.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(96)))), ((int)(((byte)(167)))));
+            this.btnPrestamoYAlumno.BorderColor = System.Drawing.Color.Blue;
+            this.btnPrestamoYAlumno.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnPrestamoYAlumno.FocusedColor = System.Drawing.Color.Empty;
+            this.btnPrestamoYAlumno.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrestamoYAlumno.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(214)))), ((int)(((byte)(32)))));
+            this.btnPrestamoYAlumno.Image = null;
+            this.btnPrestamoYAlumno.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnPrestamoYAlumno.Location = new System.Drawing.Point(1028, 3);
+            this.btnPrestamoYAlumno.Name = "btnPrestamoYAlumno";
+            this.btnPrestamoYAlumno.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.btnPrestamoYAlumno.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(198)))), ((int)(((byte)(41)))));
+            this.btnPrestamoYAlumno.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(214)))), ((int)(((byte)(32)))));
+            this.btnPrestamoYAlumno.OnHoverImage = null;
+            this.btnPrestamoYAlumno.OnPressedColor = System.Drawing.Color.Black;
+            this.btnPrestamoYAlumno.Size = new System.Drawing.Size(178, 35);
+            this.btnPrestamoYAlumno.TabIndex = 0;
+            this.btnPrestamoYAlumno.Text = "Prestamo y Alumno";
+            this.btnPrestamoYAlumno.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnPrestamoYAlumno.Click += new System.EventHandler(this.btnPrestamoYAlumno_Click);
+            this.btnPrestamoYAlumno.MouseHover += new System.EventHandler(this.btnPrestamoYAlumno_MouseHover);
             // 
-            // panel3
+            // btnMaterialTipo
             // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(723, 43);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(168, 20);
-            this.panel3.TabIndex = 1;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(533, 43);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(168, 20);
-            this.panel1.TabIndex = 1;
-            // 
-            // pnlSeleccionadorInicio
-            // 
-            this.pnlSeleccionadorInicio.BackColor = System.Drawing.Color.White;
-            this.pnlSeleccionadorInicio.Location = new System.Drawing.Point(342, 43);
-            this.pnlSeleccionadorInicio.Name = "pnlSeleccionadorInicio";
-            this.pnlSeleccionadorInicio.Size = new System.Drawing.Size(168, 20);
-            this.pnlSeleccionadorInicio.TabIndex = 1;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(45, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(60, 40);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnPrestamo
-            // 
-            this.btnPrestamo.AnimationHoverSpeed = 0.07F;
-            this.btnPrestamo.AnimationSpeed = 0.03F;
-            this.btnPrestamo.BackColor = System.Drawing.Color.Transparent;
-            this.btnPrestamo.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(96)))), ((int)(((byte)(167)))));
-            this.btnPrestamo.BorderColor = System.Drawing.Color.Black;
-            this.btnPrestamo.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnPrestamo.FocusedColor = System.Drawing.Color.Empty;
-            this.btnPrestamo.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrestamo.ForeColor = System.Drawing.Color.White;
-            this.btnPrestamo.Image = null;
-            this.btnPrestamo.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnPrestamo.Location = new System.Drawing.Point(911, 14);
-            this.btnPrestamo.Name = "btnPrestamo";
-            this.btnPrestamo.OnHoverBaseColor = System.Drawing.Color.Transparent;
-            this.btnPrestamo.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(198)))), ((int)(((byte)(41)))));
-            this.btnPrestamo.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnPrestamo.OnHoverImage = null;
-            this.btnPrestamo.OnPressedColor = System.Drawing.Color.Black;
-            this.btnPrestamo.Size = new System.Drawing.Size(183, 29);
-            this.btnPrestamo.TabIndex = 0;
-            this.btnPrestamo.Text = "Registrar prestamos";
-            this.btnPrestamo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // btnMateriales
-            // 
-            this.btnMateriales.AnimationHoverSpeed = 0.07F;
-            this.btnMateriales.AnimationSpeed = 0.03F;
-            this.btnMateriales.BackColor = System.Drawing.Color.Transparent;
-            this.btnMateriales.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(96)))), ((int)(((byte)(167)))));
-            this.btnMateriales.BorderColor = System.Drawing.Color.Black;
-            this.btnMateriales.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnMateriales.FocusedColor = System.Drawing.Color.Empty;
-            this.btnMateriales.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMateriales.ForeColor = System.Drawing.Color.White;
-            this.btnMateriales.Image = null;
-            this.btnMateriales.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnMateriales.Location = new System.Drawing.Point(723, 16);
-            this.btnMateriales.Name = "btnMateriales";
-            this.btnMateriales.OnHoverBaseColor = System.Drawing.Color.Transparent;
-            this.btnMateriales.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(198)))), ((int)(((byte)(41)))));
-            this.btnMateriales.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnMateriales.OnHoverImage = null;
-            this.btnMateriales.OnPressedColor = System.Drawing.Color.Black;
-            this.btnMateriales.Size = new System.Drawing.Size(167, 29);
-            this.btnMateriales.TabIndex = 0;
-            this.btnMateriales.Text = "Registrar Materiales";
-            this.btnMateriales.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // btnModulos
-            // 
-            this.btnModulos.AnimationHoverSpeed = 0.07F;
-            this.btnModulos.AnimationSpeed = 0.03F;
-            this.btnModulos.BackColor = System.Drawing.Color.Transparent;
-            this.btnModulos.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(96)))), ((int)(((byte)(167)))));
-            this.btnModulos.BorderColor = System.Drawing.Color.Black;
-            this.btnModulos.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnModulos.FocusedColor = System.Drawing.Color.Empty;
-            this.btnModulos.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModulos.ForeColor = System.Drawing.Color.White;
-            this.btnModulos.Image = null;
-            this.btnModulos.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnModulos.Location = new System.Drawing.Point(533, 16);
-            this.btnModulos.Name = "btnModulos";
-            this.btnModulos.OnHoverBaseColor = System.Drawing.Color.Transparent;
-            this.btnModulos.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(198)))), ((int)(((byte)(41)))));
-            this.btnModulos.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnModulos.OnHoverImage = null;
-            this.btnModulos.OnPressedColor = System.Drawing.Color.Black;
-            this.btnModulos.Size = new System.Drawing.Size(167, 29);
-            this.btnModulos.TabIndex = 0;
-            this.btnModulos.Text = "Registrar modulos";
-            this.btnModulos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnMaterialTipo.AnimationHoverSpeed = 0.07F;
+            this.btnMaterialTipo.AnimationSpeed = 0.03F;
+            this.btnMaterialTipo.BackColor = System.Drawing.Color.Transparent;
+            this.btnMaterialTipo.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(96)))), ((int)(((byte)(167)))));
+            this.btnMaterialTipo.BorderColor = System.Drawing.Color.Blue;
+            this.btnMaterialTipo.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnMaterialTipo.FocusedColor = System.Drawing.Color.Empty;
+            this.btnMaterialTipo.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMaterialTipo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(214)))), ((int)(((byte)(32)))));
+            this.btnMaterialTipo.Image = null;
+            this.btnMaterialTipo.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnMaterialTipo.Location = new System.Drawing.Point(832, 3);
+            this.btnMaterialTipo.Name = "btnMaterialTipo";
+            this.btnMaterialTipo.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.btnMaterialTipo.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(198)))), ((int)(((byte)(41)))));
+            this.btnMaterialTipo.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(214)))), ((int)(((byte)(32)))));
+            this.btnMaterialTipo.OnHoverImage = null;
+            this.btnMaterialTipo.OnPressedColor = System.Drawing.Color.Black;
+            this.btnMaterialTipo.Size = new System.Drawing.Size(167, 36);
+            this.btnMaterialTipo.TabIndex = 0;
+            this.btnMaterialTipo.Text = "Material y Tipo";
+            this.btnMaterialTipo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnMaterialTipo.Click += new System.EventHandler(this.btnMaterialTipo_Click);
+            this.btnMaterialTipo.MouseHover += new System.EventHandler(this.btnMaterialTipo_MouseHover);
             // 
             // btnInicio
             // 
@@ -248,316 +364,94 @@
             this.btnInicio.AnimationSpeed = 0.03F;
             this.btnInicio.BackColor = System.Drawing.Color.Transparent;
             this.btnInicio.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(96)))), ((int)(((byte)(167)))));
-            this.btnInicio.BorderColor = System.Drawing.Color.Black;
+            this.btnInicio.BorderColor = System.Drawing.Color.Blue;
             this.btnInicio.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnInicio.FocusedColor = System.Drawing.Color.Empty;
-            this.btnInicio.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInicio.ForeColor = System.Drawing.Color.White;
+            this.btnInicio.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInicio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(214)))), ((int)(((byte)(32)))));
             this.btnInicio.Image = null;
             this.btnInicio.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnInicio.Location = new System.Drawing.Point(342, 16);
+            this.btnInicio.Location = new System.Drawing.Point(443, 3);
             this.btnInicio.Name = "btnInicio";
             this.btnInicio.OnHoverBaseColor = System.Drawing.Color.Transparent;
             this.btnInicio.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(198)))), ((int)(((byte)(41)))));
-            this.btnInicio.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnInicio.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(198)))), ((int)(((byte)(41)))));
             this.btnInicio.OnHoverImage = null;
             this.btnInicio.OnPressedColor = System.Drawing.Color.Black;
-            this.btnInicio.Size = new System.Drawing.Size(167, 29);
+            this.btnInicio.Size = new System.Drawing.Size(167, 35);
             this.btnInicio.TabIndex = 0;
             this.btnInicio.Text = "Inicio";
             this.btnInicio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnInicio.Click += new System.EventHandler(this.btnInicio_Click);
+            this.btnInicio.MouseHover += new System.EventHandler(this.btnInicio_MouseHover);
             // 
-            // Shadow
+            // btnCerrar
             // 
-            this.Shadow.TargetControl = this;
+            this.btnCerrar.AnimationHoverSpeed = 0.07F;
+            this.btnCerrar.AnimationSpeed = 0.03F;
+            this.btnCerrar.BackColor = System.Drawing.Color.Transparent;
+            this.btnCerrar.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(96)))), ((int)(((byte)(167)))));
+            this.btnCerrar.BorderColor = System.Drawing.Color.Black;
+            this.btnCerrar.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnCerrar.FocusedColor = System.Drawing.Color.Empty;
+            this.btnCerrar.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrar.ForeColor = System.Drawing.Color.White;
+            this.btnCerrar.Image = null;
+            this.btnCerrar.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnCerrar.Location = new System.Drawing.Point(1211, 12);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.OnHoverBaseColor = System.Drawing.Color.Blue;
+            this.btnCerrar.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(154)))), ((int)(((byte)(45)))));
+            this.btnCerrar.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnCerrar.OnHoverImage = null;
+            this.btnCerrar.OnPressedColor = System.Drawing.Color.Black;
+            this.btnCerrar.Radius = 18;
+            this.btnCerrar.Size = new System.Drawing.Size(39, 37);
+            this.btnCerrar.TabIndex = 3;
+            this.btnCerrar.Text = "x";
+            this.btnCerrar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
-            // pnlRegistroModulos
+            // panel3
             // 
-            this.pnlRegistroModulos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(96)))), ((int)(((byte)(167)))));
-            this.pnlRegistroModulos.Controls.Add(this.panel11);
-            this.pnlRegistroModulos.Controls.Add(this.panel9);
-            this.pnlRegistroModulos.Controls.Add(this.gunaButton5);
-            this.pnlRegistroModulos.Controls.Add(this.panel10);
-            this.pnlRegistroModulos.Controls.Add(this.gunaButton4);
-            this.pnlRegistroModulos.Controls.Add(this.panel8);
-            this.pnlRegistroModulos.Location = new System.Drawing.Point(578, 531);
-            this.pnlRegistroModulos.Name = "pnlRegistroModulos";
-            this.pnlRegistroModulos.Size = new System.Drawing.Size(167, 96);
-            this.pnlRegistroModulos.TabIndex = 1;
+            this.panel3.BackColor = System.Drawing.Color.Black;
+            this.panel3.Location = new System.Drawing.Point(100, 94);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1062, 456);
+            this.panel3.TabIndex = 4;
             // 
-            // panel11
+            // btnPerfil
             // 
-            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(96)))), ((int)(((byte)(167)))));
-            this.panel11.Location = new System.Drawing.Point(-8, 84);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(176, 16);
-            this.panel11.TabIndex = 2;
+            this.btnPerfil.AnimationHoverSpeed = 0.07F;
+            this.btnPerfil.AnimationSpeed = 0.03F;
+            this.btnPerfil.BackColor = System.Drawing.Color.Transparent;
+            this.btnPerfil.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btnPerfil.BorderColor = System.Drawing.Color.Black;
+            this.btnPerfil.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnPerfil.FocusedColor = System.Drawing.Color.Empty;
+            this.btnPerfil.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnPerfil.ForeColor = System.Drawing.Color.White;
+            this.btnPerfil.Image = null;
+            this.btnPerfil.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnPerfil.Location = new System.Drawing.Point(26, 8);
+            this.btnPerfil.Name = "btnPerfil";
+            this.btnPerfil.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnPerfil.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnPerfil.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnPerfil.OnHoverImage = null;
+            this.btnPerfil.OnPressedColor = System.Drawing.Color.Black;
+            this.btnPerfil.Radius = 25;
+            this.btnPerfil.Size = new System.Drawing.Size(54, 52);
+            this.btnPerfil.TabIndex = 5;
             // 
-            // panel9
+            // label1
             // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(96)))), ((int)(((byte)(167)))));
-            this.panel9.Location = new System.Drawing.Point(-11, 34);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(176, 16);
-            this.panel9.TabIndex = 2;
-            // 
-            // gunaButton5
-            // 
-            this.gunaButton5.AnimationHoverSpeed = 0.07F;
-            this.gunaButton5.AnimationSpeed = 0.03F;
-            this.gunaButton5.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton5.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(96)))), ((int)(((byte)(167)))));
-            this.gunaButton5.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton5.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton5.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton5.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaButton5.ForeColor = System.Drawing.Color.White;
-            this.gunaButton5.Image = null;
-            this.gunaButton5.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton5.Location = new System.Drawing.Point(0, 53);
-            this.gunaButton5.Name = "gunaButton5";
-            this.gunaButton5.OnHoverBaseColor = System.Drawing.Color.Transparent;
-            this.gunaButton5.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(198)))), ((int)(((byte)(41)))));
-            this.gunaButton5.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton5.OnHoverImage = null;
-            this.gunaButton5.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton5.Size = new System.Drawing.Size(167, 29);
-            this.gunaButton5.TabIndex = 0;
-            this.gunaButton5.Text = "Unidad didactica";
-            this.gunaButton5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.White;
-            this.panel10.Location = new System.Drawing.Point(0, 80);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(168, 20);
-            this.panel10.TabIndex = 1;
-            // 
-            // gunaButton4
-            // 
-            this.gunaButton4.AnimationHoverSpeed = 0.07F;
-            this.gunaButton4.AnimationSpeed = 0.03F;
-            this.gunaButton4.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton4.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(96)))), ((int)(((byte)(167)))));
-            this.gunaButton4.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton4.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton4.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton4.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaButton4.ForeColor = System.Drawing.Color.White;
-            this.gunaButton4.Image = null;
-            this.gunaButton4.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton4.Location = new System.Drawing.Point(-3, 3);
-            this.gunaButton4.Name = "gunaButton4";
-            this.gunaButton4.OnHoverBaseColor = System.Drawing.Color.Transparent;
-            this.gunaButton4.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(198)))), ((int)(((byte)(41)))));
-            this.gunaButton4.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton4.OnHoverImage = null;
-            this.gunaButton4.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton4.Size = new System.Drawing.Size(167, 29);
-            this.gunaButton4.TabIndex = 0;
-            this.gunaButton4.Text = "Modulo";
-            this.gunaButton4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.White;
-            this.panel8.Location = new System.Drawing.Point(-3, 30);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(168, 20);
-            this.panel8.TabIndex = 1;
-            // 
-            // pnlRegistroMaterial
-            // 
-            this.pnlRegistroMaterial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(96)))), ((int)(((byte)(167)))));
-            this.pnlRegistroMaterial.Controls.Add(this.panel17);
-            this.pnlRegistroMaterial.Controls.Add(this.panel18);
-            this.pnlRegistroMaterial.Controls.Add(this.gunaButton8);
-            this.pnlRegistroMaterial.Controls.Add(this.panel21);
-            this.pnlRegistroMaterial.Controls.Add(this.gunaButton9);
-            this.pnlRegistroMaterial.Controls.Add(this.panel22);
-            this.pnlRegistroMaterial.Location = new System.Drawing.Point(769, 531);
-            this.pnlRegistroMaterial.Name = "pnlRegistroMaterial";
-            this.pnlRegistroMaterial.Size = new System.Drawing.Size(167, 95);
-            this.pnlRegistroMaterial.TabIndex = 1;
-            // 
-            // panel17
-            // 
-            this.panel17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(96)))), ((int)(((byte)(167)))));
-            this.panel17.Location = new System.Drawing.Point(-7, 83);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(176, 16);
-            this.panel17.TabIndex = 2;
-            // 
-            // panel18
-            // 
-            this.panel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(96)))), ((int)(((byte)(167)))));
-            this.panel18.Location = new System.Drawing.Point(-8, 33);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(176, 16);
-            this.panel18.TabIndex = 2;
-            // 
-            // gunaButton8
-            // 
-            this.gunaButton8.AnimationHoverSpeed = 0.07F;
-            this.gunaButton8.AnimationSpeed = 0.03F;
-            this.gunaButton8.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton8.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(96)))), ((int)(((byte)(167)))));
-            this.gunaButton8.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton8.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton8.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton8.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaButton8.ForeColor = System.Drawing.Color.White;
-            this.gunaButton8.Image = null;
-            this.gunaButton8.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton8.Location = new System.Drawing.Point(0, 52);
-            this.gunaButton8.Name = "gunaButton8";
-            this.gunaButton8.OnHoverBaseColor = System.Drawing.Color.Transparent;
-            this.gunaButton8.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(198)))), ((int)(((byte)(41)))));
-            this.gunaButton8.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton8.OnHoverImage = null;
-            this.gunaButton8.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton8.Size = new System.Drawing.Size(167, 29);
-            this.gunaButton8.TabIndex = 0;
-            this.gunaButton8.Text = "Material";
-            this.gunaButton8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // panel21
-            // 
-            this.panel21.BackColor = System.Drawing.Color.White;
-            this.panel21.Location = new System.Drawing.Point(1, 80);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(168, 20);
-            this.panel21.TabIndex = 1;
-            // 
-            // gunaButton9
-            // 
-            this.gunaButton9.AnimationHoverSpeed = 0.07F;
-            this.gunaButton9.AnimationSpeed = 0.03F;
-            this.gunaButton9.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton9.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(96)))), ((int)(((byte)(167)))));
-            this.gunaButton9.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton9.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton9.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton9.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaButton9.ForeColor = System.Drawing.Color.White;
-            this.gunaButton9.Image = null;
-            this.gunaButton9.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton9.Location = new System.Drawing.Point(0, 2);
-            this.gunaButton9.Name = "gunaButton9";
-            this.gunaButton9.OnHoverBaseColor = System.Drawing.Color.Transparent;
-            this.gunaButton9.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(198)))), ((int)(((byte)(41)))));
-            this.gunaButton9.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton9.OnHoverImage = null;
-            this.gunaButton9.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton9.Size = new System.Drawing.Size(167, 29);
-            this.gunaButton9.TabIndex = 0;
-            this.gunaButton9.Text = "Tipo";
-            this.gunaButton9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // panel22
-            // 
-            this.panel22.BackColor = System.Drawing.Color.White;
-            this.panel22.Location = new System.Drawing.Point(0, 30);
-            this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(168, 20);
-            this.panel22.TabIndex = 1;
-            // 
-            // pnlRegistroPrestamo
-            // 
-            this.pnlRegistroPrestamo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(96)))), ((int)(((byte)(167)))));
-            this.pnlRegistroPrestamo.Controls.Add(this.panel13);
-            this.pnlRegistroPrestamo.Controls.Add(this.panel14);
-            this.pnlRegistroPrestamo.Controls.Add(this.gunaButton6);
-            this.pnlRegistroPrestamo.Controls.Add(this.panel15);
-            this.pnlRegistroPrestamo.Controls.Add(this.gunaButton7);
-            this.pnlRegistroPrestamo.Controls.Add(this.panel19);
-            this.pnlRegistroPrestamo.Location = new System.Drawing.Point(957, 531);
-            this.pnlRegistroPrestamo.Name = "pnlRegistroPrestamo";
-            this.pnlRegistroPrestamo.Size = new System.Drawing.Size(182, 95);
-            this.pnlRegistroPrestamo.TabIndex = 1;
-            // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(96)))), ((int)(((byte)(167)))));
-            this.panel13.Location = new System.Drawing.Point(0, 83);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(176, 16);
-            this.panel13.TabIndex = 2;
-            // 
-            // panel14
-            // 
-            this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(96)))), ((int)(((byte)(167)))));
-            this.panel14.Location = new System.Drawing.Point(-1, 33);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(176, 16);
-            this.panel14.TabIndex = 2;
-            // 
-            // gunaButton6
-            // 
-            this.gunaButton6.AnimationHoverSpeed = 0.07F;
-            this.gunaButton6.AnimationSpeed = 0.03F;
-            this.gunaButton6.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton6.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(96)))), ((int)(((byte)(167)))));
-            this.gunaButton6.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton6.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton6.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton6.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaButton6.ForeColor = System.Drawing.Color.White;
-            this.gunaButton6.Image = null;
-            this.gunaButton6.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton6.Location = new System.Drawing.Point(7, 52);
-            this.gunaButton6.Name = "gunaButton6";
-            this.gunaButton6.OnHoverBaseColor = System.Drawing.Color.Transparent;
-            this.gunaButton6.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(198)))), ((int)(((byte)(41)))));
-            this.gunaButton6.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton6.OnHoverImage = null;
-            this.gunaButton6.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton6.Size = new System.Drawing.Size(167, 29);
-            this.gunaButton6.TabIndex = 0;
-            this.gunaButton6.Text = "Prestamo";
-            this.gunaButton6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // panel15
-            // 
-            this.panel15.BackColor = System.Drawing.Color.White;
-            this.panel15.Location = new System.Drawing.Point(8, 80);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(168, 20);
-            this.panel15.TabIndex = 1;
-            // 
-            // gunaButton7
-            // 
-            this.gunaButton7.AnimationHoverSpeed = 0.07F;
-            this.gunaButton7.AnimationSpeed = 0.03F;
-            this.gunaButton7.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton7.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(96)))), ((int)(((byte)(167)))));
-            this.gunaButton7.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton7.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton7.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton7.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaButton7.ForeColor = System.Drawing.Color.White;
-            this.gunaButton7.Image = null;
-            this.gunaButton7.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton7.Location = new System.Drawing.Point(7, 2);
-            this.gunaButton7.Name = "gunaButton7";
-            this.gunaButton7.OnHoverBaseColor = System.Drawing.Color.Transparent;
-            this.gunaButton7.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(198)))), ((int)(((byte)(41)))));
-            this.gunaButton7.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton7.OnHoverImage = null;
-            this.gunaButton7.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton7.Size = new System.Drawing.Size(167, 29);
-            this.gunaButton7.TabIndex = 0;
-            this.gunaButton7.Text = "Alumno";
-            this.gunaButton7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // panel19
-            // 
-            this.panel19.BackColor = System.Drawing.Color.White;
-            this.panel19.Location = new System.Drawing.Point(7, 30);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(168, 20);
-            this.panel19.TabIndex = 1;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(32, 63);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(39, 15);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "label1";
             // 
             // SPUMenu
             // 
@@ -566,64 +460,54 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1262, 692);
-            this.Controls.Add(this.pnlRegistroPrestamo);
-            this.Controls.Add(this.pnlRegistroMaterial);
-            this.Controls.Add(this.pnlRegistroModulos);
-            this.Controls.Add(this.gunaElipsePanel1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnPerfil);
+            this.Controls.Add(this.pnlRegistroMaterialYTipo);
+            this.Controls.Add(this.pnlRegistroPrestamoYAlumno);
+            this.Controls.Add(this.pnlRegistroModuloYUnidad);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.btnCerrar);
+            this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(214)))), ((int)(((byte)(32)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SPUMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.TransparencyKey = System.Drawing.Color.Gray;
             this.Load += new System.EventHandler(this.SPUMenu_Load);
-            this.gunaElipsePanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.pnlRegistroModulos.ResumeLayout(false);
-            this.pnlRegistroMaterial.ResumeLayout(false);
-            this.pnlRegistroPrestamo.ResumeLayout(false);
+            this.MouseHover += new System.EventHandler(this.SPUMenu_MouseHover);
+            this.pnlRegistroModuloYUnidad.ResumeLayout(false);
+            this.pnlRegistroMaterialYTipo.ResumeLayout(false);
+            this.pnlRegistroPrestamoYAlumno.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel1;
         private Guna.UI.WinForms.GunaDragControl Shadow;
-        private System.Windows.Forms.Panel pnlSeleccionadorInicio;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private Guna.UI.WinForms.GunaButton btnInicio;
-        private System.Windows.Forms.Panel pnlDiseñoBotonInicio;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel pnlRegistroPrestamoYAlumno;
+        private Guna.UI.WinForms.GunaButton btnRegistroPrestamo;
+        private Guna.UI.WinForms.GunaButton btnRegistroAlumno;
+        private System.Windows.Forms.Panel pnlRegistroMaterialYTipo;
+        private Guna.UI.WinForms.GunaButton btnRegistrarMaterial;
+        private Guna.UI.WinForms.GunaButton btnRegistroTipoMaterial;
+        private System.Windows.Forms.Panel pnlRegistroModuloYUnidad;
+        private Guna.UI.WinForms.GunaButton btnModuloYUnidad;
+        private Guna.UI.WinForms.GunaButton btnRegistroModulo;
         private System.Windows.Forms.Panel panel1;
-        private Guna.UI.WinForms.GunaButton btnPrestamo;
-        private Guna.UI.WinForms.GunaButton btnMateriales;
-        private Guna.UI.WinForms.GunaButton btnModulos;
-        private System.Windows.Forms.Panel pnlRegistroPrestamo;
-        private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.Panel panel14;
-        private Guna.UI.WinForms.GunaButton gunaButton6;
-        private System.Windows.Forms.Panel panel15;
-        private Guna.UI.WinForms.GunaButton gunaButton7;
-        private System.Windows.Forms.Panel panel19;
-        private System.Windows.Forms.Panel pnlRegistroMaterial;
-        private System.Windows.Forms.Panel panel17;
-        private System.Windows.Forms.Panel panel18;
-        private Guna.UI.WinForms.GunaButton gunaButton8;
-        private System.Windows.Forms.Panel panel21;
-        private Guna.UI.WinForms.GunaButton gunaButton9;
-        private System.Windows.Forms.Panel panel22;
-        private System.Windows.Forms.Panel pnlRegistroModulos;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Panel panel9;
-        private Guna.UI.WinForms.GunaButton gunaButton5;
-        private System.Windows.Forms.Panel panel10;
-        private Guna.UI.WinForms.GunaButton gunaButton4;
-        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel pnlSeleccionPrincipal1;
+        private Guna.UI.WinForms.GunaButton btnPrestamoYAlumno;
+        private Guna.UI.WinForms.GunaButton btnMaterialTipo;
+        private Guna.UI.WinForms.GunaButton btnInicio;
+        private Guna.UI.WinForms.GunaButton btnRegistroUnidadDidactica;
+        private System.Windows.Forms.Panel panel2;
+        private Guna.UI.WinForms.GunaButton btnCerrar;
+        private System.Windows.Forms.Label label1;
+        private Guna.UI.WinForms.GunaButton btnPerfil;
+        private System.Windows.Forms.Panel panel3;
     }
 }
 
