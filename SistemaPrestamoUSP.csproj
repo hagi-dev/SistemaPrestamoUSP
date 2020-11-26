@@ -60,6 +60,18 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alumno.Designer.cs">
+      <DependentUpon>Alumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarMaterial.Designer.cs">
+      <DependentUpon>BuscarMaterial.cs</DependentUpon>
+    </Compile>
     <Compile Include="RegistrarModulo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +116,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Alumno.resx">
+      <DependentUpon>Alumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarMaterial.resx">
+      <DependentUpon>BuscarMaterial.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RegistrarModulo.resx">
       <DependentUpon>RegistrarModulo.cs</DependentUpon>
     </EmbeddedResource>

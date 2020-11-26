@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.cbxTipo = new Guna.UI.WinForms.GunaComboBox();
             this.cbxEstado = new Guna.UI.WinForms.GunaComboBox();
             this.btnEliminar = new Guna.UI.WinForms.GunaButton();
@@ -47,7 +48,11 @@
             this.txtCodigoMaterial = new Guna.UI.WinForms.GunaTextBox();
             this.dgvDatosMateriales = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.lblVerificacionCodigoMaterial = new System.Windows.Forms.Label();
+            this.cbxSoloCodigo = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatosMateriales)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // cbxTipo
@@ -80,6 +85,12 @@
             this.cbxEstado.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbxEstado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(93)))), ((int)(((byte)(169)))));
             this.cbxEstado.FormattingEnabled = true;
+            this.cbxEstado.Items.AddRange(new object[] {
+            "Selecciona Estado",
+            "Nuevo",
+            "bueno",
+            "regular",
+            "por reparar"});
             this.cbxEstado.Location = new System.Drawing.Point(99, 234);
             this.cbxEstado.Name = "cbxEstado";
             this.cbxEstado.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
@@ -113,6 +124,7 @@
             this.btnEliminar.TabIndex = 36;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnModificar
             // 
@@ -165,6 +177,7 @@
             this.btnAgregar.TabIndex = 38;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnNuevo
             // 
@@ -318,6 +331,7 @@
             this.txtDescripcionMaterial.Size = new System.Drawing.Size(293, 26);
             this.txtDescripcionMaterial.TabIndex = 26;
             this.txtDescripcionMaterial.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtDescripcionMaterial.Validating += new System.ComponentModel.CancelEventHandler(this.txtDescripcionMaterial_Validating);
             // 
             // txtCodigoMaterial
             // 
@@ -331,6 +345,7 @@
             this.txtCodigoMaterial.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodigoMaterial.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(93)))), ((int)(((byte)(169)))));
             this.txtCodigoMaterial.Location = new System.Drawing.Point(99, 100);
+            this.txtCodigoMaterial.MaxLength = 9;
             this.txtCodigoMaterial.Name = "txtCodigoMaterial";
             this.txtCodigoMaterial.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.txtCodigoMaterial.PasswordChar = '\0';
@@ -339,6 +354,9 @@
             this.txtCodigoMaterial.Size = new System.Drawing.Size(293, 26);
             this.txtCodigoMaterial.TabIndex = 27;
             this.txtCodigoMaterial.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtCodigoMaterial.Enter += new System.EventHandler(this.txtCodigoMaterial_Enter);
+            this.txtCodigoMaterial.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCodigoMaterial_KeyPress);
+            this.txtCodigoMaterial.Validating += new System.ComponentModel.CancelEventHandler(this.txtCodigoMaterial_Validating);
             // 
             // dgvDatosMateriales
             // 
@@ -359,11 +377,33 @@
             this.label2.TabIndex = 23;
             this.label2.Text = "REGISTRAR MATERIAL";
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // lblVerificacionCodigoMaterial
+            // 
+            this.lblVerificacionCodigoMaterial.AutoSize = true;
+            this.lblVerificacionCodigoMaterial.Location = new System.Drawing.Point(105, 128);
+            this.lblVerificacionCodigoMaterial.Name = "lblVerificacionCodigoMaterial";
+            this.lblVerificacionCodigoMaterial.Size = new System.Drawing.Size(35, 13);
+            this.lblVerificacionCodigoMaterial.TabIndex = 42;
+            this.lblVerificacionCodigoMaterial.Text = "label6";
+            // 
+            // cbxSoloCodigo
+            // 
+            this.cbxSoloCodigo.FormattingEnabled = true;
+            this.cbxSoloCodigo.Location = new System.Drawing.Point(444, 267);
+            this.cbxSoloCodigo.Name = "cbxSoloCodigo";
+            this.cbxSoloCodigo.Size = new System.Drawing.Size(121, 21);
+            this.cbxSoloCodigo.TabIndex = 43;
+            // 
             // RegistroMaterial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1010, 458);
+            this.Controls.Add(this.lblVerificacionCodigoMaterial);
             this.Controls.Add(this.cbxTipo);
             this.Controls.Add(this.cbxEstado);
             this.Controls.Add(this.btnEliminar);
@@ -383,10 +423,13 @@
             this.Controls.Add(this.txtCodigoMaterial);
             this.Controls.Add(this.dgvDatosMateriales);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.cbxSoloCodigo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RegistroMaterial";
             this.Text = "RegistroMaterial";
+            this.Load += new System.EventHandler(this.RegistroMaterial_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatosMateriales)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -413,5 +456,8 @@
         private Guna.UI.WinForms.GunaTextBox txtCodigoMaterial;
         private System.Windows.Forms.DataGridView dgvDatosMateriales;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.Label lblVerificacionCodigoMaterial;
+        private System.Windows.Forms.ComboBox cbxSoloCodigo;
     }
 }

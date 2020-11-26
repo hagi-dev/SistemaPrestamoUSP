@@ -43,6 +43,8 @@
             this.lblSeccion1 = new System.Windows.Forms.Label();
             this.lblMayorOmenor = new System.Windows.Forms.Label();
             this.lblSeccion2 = new System.Windows.Forms.Label();
+            this.lblVerificacionCodigoModulo = new System.Windows.Forms.Label();
+            this.cbxSoloCodigo = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatosModulos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,6 +79,7 @@
             this.txtCodigoModulo.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodigoModulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(93)))), ((int)(((byte)(169)))));
             this.txtCodigoModulo.Location = new System.Drawing.Point(103, 112);
+            this.txtCodigoModulo.MaxLength = 5;
             this.txtCodigoModulo.Name = "txtCodigoModulo";
             this.txtCodigoModulo.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.txtCodigoModulo.PasswordChar = '\0';
@@ -86,6 +89,8 @@
             this.txtCodigoModulo.TabIndex = 3;
             this.txtCodigoModulo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtCodigoModulo.TextChanged += new System.EventHandler(this.txtCodigoModulo_TextChanged);
+            this.txtCodigoModulo.Enter += new System.EventHandler(this.txtCodigoModulo_Enter);
+            this.txtCodigoModulo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCodigoModulo_KeyPress);
             // 
             // txtNombreModulo
             // 
@@ -114,6 +119,7 @@
             this.txtUltimoCodigoModuloRegistrado.BaseColor = System.Drawing.Color.White;
             this.txtUltimoCodigoModuloRegistrado.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(91)))), ((int)(((byte)(164)))));
             this.txtUltimoCodigoModuloRegistrado.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtUltimoCodigoModuloRegistrado.Enabled = false;
             this.txtUltimoCodigoModuloRegistrado.FocusedBaseColor = System.Drawing.Color.White;
             this.txtUltimoCodigoModuloRegistrado.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(93)))), ((int)(((byte)(169)))));
             this.txtUltimoCodigoModuloRegistrado.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(93)))), ((int)(((byte)(169)))));
@@ -211,6 +217,7 @@
             this.btnAgregarModulo.TabIndex = 6;
             this.btnAgregarModulo.Text = "Agregar";
             this.btnAgregarModulo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnAgregarModulo.Click += new System.EventHandler(this.btnAgregarModulo_Click);
             // 
             // btnModificarModulo
             // 
@@ -297,12 +304,30 @@
             this.lblSeccion2.TabIndex = 5;
             this.lblSeccion2.Text = "label3";
             // 
+            // lblVerificacionCodigoModulo
+            // 
+            this.lblVerificacionCodigoModulo.AutoSize = true;
+            this.lblVerificacionCodigoModulo.Location = new System.Drawing.Point(124, 141);
+            this.lblVerificacionCodigoModulo.Name = "lblVerificacionCodigoModulo";
+            this.lblVerificacionCodigoModulo.Size = new System.Drawing.Size(35, 13);
+            this.lblVerificacionCodigoModulo.TabIndex = 7;
+            this.lblVerificacionCodigoModulo.Text = "label4";
+            // 
+            // cbxSoloCodigo
+            // 
+            this.cbxSoloCodigo.FormattingEnabled = true;
+            this.cbxSoloCodigo.Location = new System.Drawing.Point(465, 192);
+            this.cbxSoloCodigo.Name = "cbxSoloCodigo";
+            this.cbxSoloCodigo.Size = new System.Drawing.Size(121, 21);
+            this.cbxSoloCodigo.TabIndex = 8;
+            // 
             // RegistrarModulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1010, 458);
+            this.Controls.Add(this.lblVerificacionCodigoModulo);
             this.Controls.Add(this.btnEliminarModulo);
             this.Controls.Add(this.btnModificarModulo);
             this.Controls.Add(this.btnAgregarModulo);
@@ -318,6 +343,7 @@
             this.Controls.Add(this.txtCodigoModulo);
             this.Controls.Add(this.dgvDatosModulos);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.cbxSoloCodigo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RegistrarModulo";
             this.Text = "Form1";
@@ -345,5 +371,7 @@
         private System.Windows.Forms.Label lblSeccion1;
         private System.Windows.Forms.Label lblMayorOmenor;
         private System.Windows.Forms.Label lblSeccion2;
+        private System.Windows.Forms.Label lblVerificacionCodigoModulo;
+        private System.Windows.Forms.ComboBox cbxSoloCodigo;
     }
 }

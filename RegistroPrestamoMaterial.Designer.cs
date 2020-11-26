@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnEliminar = new Guna.UI.WinForms.GunaButton();
             this.btnModificar = new Guna.UI.WinForms.GunaButton();
             this.btnAgregar = new Guna.UI.WinForms.GunaButton();
@@ -44,6 +45,10 @@
             this.txtNombresAlumno = new Guna.UI.WinForms.GunaTextBox();
             this.txtCodigoPrestamo = new Guna.UI.WinForms.GunaTextBox();
             this.dgvDatosPrestamoMateriales = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label2 = new System.Windows.Forms.Label();
             this.cbxUnidadD = new Guna.UI.WinForms.GunaComboBox();
             this.cbxModulo = new Guna.UI.WinForms.GunaComboBox();
@@ -56,12 +61,18 @@
             this.txtNombreMaterial = new Guna.UI.WinForms.GunaTextBox();
             this.txtCodigoMaterial = new Guna.UI.WinForms.GunaTextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
+            this.btnBuscarMaterial = new Guna.UI.WinForms.GunaButton();
             this.txtCantidadDeMaterial = new Guna.UI.WinForms.GunaTextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.cbxEstadoMaterialPrestado = new Guna.UI.WinForms.GunaComboBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.btnAgregarDataGridView = new Guna.UI.WinForms.GunaButton();
+            this.btnEliminarDeDataGridView = new Guna.UI.WinForms.GunaButton();
+            this.cbxSoloCodigo = new System.Windows.Forms.ComboBox();
+            this.lblVerificacionCodigoPrestamo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatosPrestamoMateriales)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnEliminar
@@ -141,6 +152,7 @@
             this.btnAgregar.TabIndex = 79;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnNuevo
             // 
@@ -167,59 +179,60 @@
             this.btnNuevo.TabIndex = 80;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // Email
             // 
             this.Email.AutoSize = true;
-            this.Email.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Email.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Email.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(91)))), ((int)(((byte)(164)))));
             this.Email.Location = new System.Drawing.Point(46, 177);
             this.Email.Name = "Email";
-            this.Email.Size = new System.Drawing.Size(80, 22);
+            this.Email.Size = new System.Drawing.Size(76, 21);
             this.Email.TabIndex = 67;
             this.Email.Text = "Alumno:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(91)))), ((int)(((byte)(164)))));
             this.label6.Location = new System.Drawing.Point(245, 241);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(75, 22);
+            this.label6.Size = new System.Drawing.Size(70, 21);
             this.label6.TabIndex = 68;
             this.label6.Text = "Unidad:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(91)))), ((int)(((byte)(164)))));
             this.label4.Location = new System.Drawing.Point(37, 241);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(76, 22);
+            this.label4.Size = new System.Drawing.Size(73, 21);
             this.label4.TabIndex = 69;
             this.label4.Text = "Modulo:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(91)))), ((int)(((byte)(164)))));
             this.label3.Location = new System.Drawing.Point(227, 54);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(120, 22);
+            this.label3.Size = new System.Drawing.Size(112, 21);
             this.label3.TabIndex = 70;
             this.label3.Text = "Observacion:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(91)))), ((int)(((byte)(164)))));
             this.label1.Location = new System.Drawing.Point(46, 54);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 22);
+            this.label1.Size = new System.Drawing.Size(71, 21);
             this.label1.TabIndex = 71;
             this.label1.Text = "Codigo:";
             // 
@@ -262,6 +275,7 @@
             this.txtCodigoAlumno.BaseColor = System.Drawing.Color.White;
             this.txtCodigoAlumno.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(91)))), ((int)(((byte)(164)))));
             this.txtCodigoAlumno.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCodigoAlumno.Enabled = false;
             this.txtCodigoAlumno.FocusedBaseColor = System.Drawing.Color.White;
             this.txtCodigoAlumno.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(93)))), ((int)(((byte)(169)))));
             this.txtCodigoAlumno.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(93)))), ((int)(((byte)(169)))));
@@ -275,6 +289,7 @@
             this.txtCodigoAlumno.Size = new System.Drawing.Size(111, 26);
             this.txtCodigoAlumno.TabIndex = 65;
             this.txtCodigoAlumno.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtCodigoAlumno.Validating += new System.ComponentModel.CancelEventHandler(this.txtCodigoAlumno_Validating);
             // 
             // txtNombresAlumno
             // 
@@ -282,6 +297,7 @@
             this.txtNombresAlumno.BaseColor = System.Drawing.Color.White;
             this.txtNombresAlumno.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(91)))), ((int)(((byte)(164)))));
             this.txtNombresAlumno.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNombresAlumno.Enabled = false;
             this.txtNombresAlumno.FocusedBaseColor = System.Drawing.Color.White;
             this.txtNombresAlumno.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(93)))), ((int)(((byte)(169)))));
             this.txtNombresAlumno.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(93)))), ((int)(((byte)(169)))));
@@ -308,6 +324,7 @@
             this.txtCodigoPrestamo.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodigoPrestamo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(93)))), ((int)(((byte)(169)))));
             this.txtCodigoPrestamo.Location = new System.Drawing.Point(41, 79);
+            this.txtCodigoPrestamo.MaxLength = 5;
             this.txtCodigoPrestamo.Name = "txtCodigoPrestamo";
             this.txtCodigoPrestamo.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.txtCodigoPrestamo.PasswordChar = '\0';
@@ -316,14 +333,45 @@
             this.txtCodigoPrestamo.Size = new System.Drawing.Size(184, 26);
             this.txtCodigoPrestamo.TabIndex = 66;
             this.txtCodigoPrestamo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtCodigoPrestamo.TextChanged += new System.EventHandler(this.txtCodigoPrestamo_TextChanged);
+            this.txtCodigoPrestamo.Enter += new System.EventHandler(this.txtCodigoPrestamo_Enter);
+            this.txtCodigoPrestamo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCodigoPrestamo_KeyPress);
+            this.txtCodigoPrestamo.Validating += new System.ComponentModel.CancelEventHandler(this.txtCodigoPrestamo_Validating);
             // 
             // dgvDatosPrestamoMateriales
             // 
+            this.dgvDatosPrestamoMateriales.AllowUserToAddRows = false;
             this.dgvDatosPrestamoMateriales.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDatosPrestamoMateriales.Location = new System.Drawing.Point(447, 57);
+            this.dgvDatosPrestamoMateriales.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4});
+            this.dgvDatosPrestamoMateriales.Location = new System.Drawing.Point(447, 93);
             this.dgvDatosPrestamoMateriales.Name = "dgvDatosPrestamoMateriales";
-            this.dgvDatosPrestamoMateriales.Size = new System.Drawing.Size(519, 360);
+            this.dgvDatosPrestamoMateriales.Size = new System.Drawing.Size(501, 324);
             this.dgvDatosPrestamoMateriales.TabIndex = 60;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Codigo Material";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column2.HeaderText = "Material";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Cantidad";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Estado";
+            this.Column4.Name = "Column4";
             // 
             // label2
             // 
@@ -373,6 +421,7 @@
             this.cbxModulo.Radius = 10;
             this.cbxModulo.Size = new System.Drawing.Size(188, 26);
             this.cbxModulo.TabIndex = 83;
+            this.cbxModulo.SelectedIndexChanged += new System.EventHandler(this.cbxModulo_SelectedIndexChanged);
             // 
             // dtpFechaDevolucion
             // 
@@ -390,7 +439,7 @@
             this.dtpFechaDevolucion.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpFechaDevolucion.Name = "dtpFechaDevolucion";
             this.dtpFechaDevolucion.OnHoverBaseColor = System.Drawing.Color.Transparent;
-            this.dtpFechaDevolucion.OnHoverBorderColor = System.Drawing.Color.Transparent;
+            this.dtpFechaDevolucion.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(91)))), ((int)(((byte)(164)))));
             this.dtpFechaDevolucion.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(91)))), ((int)(((byte)(164)))));
             this.dtpFechaDevolucion.OnPressedColor = System.Drawing.Color.Black;
             this.dtpFechaDevolucion.Radius = 10;
@@ -398,6 +447,7 @@
             this.dtpFechaDevolucion.TabIndex = 84;
             this.dtpFechaDevolucion.Text = "25/11/2020";
             this.dtpFechaDevolucion.Value = new System.DateTime(2020, 11, 25, 15, 25, 51, 384);
+            this.dtpFechaDevolucion.Validating += new System.ComponentModel.CancelEventHandler(this.dtpFechaDevolucion_Validating);
             // 
             // dtpFechaPrestamo
             // 
@@ -415,7 +465,7 @@
             this.dtpFechaPrestamo.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpFechaPrestamo.Name = "dtpFechaPrestamo";
             this.dtpFechaPrestamo.OnHoverBaseColor = System.Drawing.Color.Transparent;
-            this.dtpFechaPrestamo.OnHoverBorderColor = System.Drawing.Color.Transparent;
+            this.dtpFechaPrestamo.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(91)))), ((int)(((byte)(164)))));
             this.dtpFechaPrestamo.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(91)))), ((int)(((byte)(164)))));
             this.dtpFechaPrestamo.OnPressedColor = System.Drawing.Color.Black;
             this.dtpFechaPrestamo.Radius = 10;
@@ -427,22 +477,22 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(91)))), ((int)(((byte)(164)))));
             this.label5.Location = new System.Drawing.Point(46, 119);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(151, 22);
+            this.label5.Size = new System.Drawing.Size(141, 21);
             this.label5.TabIndex = 70;
             this.label5.Text = "Fecha Prestamo:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(91)))), ((int)(((byte)(164)))));
             this.label7.Location = new System.Drawing.Point(227, 119);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(163, 22);
+            this.label7.Size = new System.Drawing.Size(154, 21);
             this.label7.TabIndex = 70;
             this.label7.Text = "Fecha Devolucion:";
             // 
@@ -471,6 +521,7 @@
             this.btnBuscarAlumno.TabIndex = 85;
             this.btnBuscarAlumno.Text = "...";
             this.btnBuscarAlumno.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnBuscarAlumno.Click += new System.EventHandler(this.btnBuscarAlumno_Click);
             // 
             // txtObservacion
             // 
@@ -498,6 +549,7 @@
             this.txtNombreMaterial.BaseColor = System.Drawing.Color.White;
             this.txtNombreMaterial.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(91)))), ((int)(((byte)(164)))));
             this.txtNombreMaterial.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNombreMaterial.Enabled = false;
             this.txtNombreMaterial.FocusedBaseColor = System.Drawing.Color.White;
             this.txtNombreMaterial.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(93)))), ((int)(((byte)(169)))));
             this.txtNombreMaterial.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(93)))), ((int)(((byte)(169)))));
@@ -518,6 +570,7 @@
             this.txtCodigoMaterial.BaseColor = System.Drawing.Color.White;
             this.txtCodigoMaterial.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(91)))), ((int)(((byte)(164)))));
             this.txtCodigoMaterial.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCodigoMaterial.Enabled = false;
             this.txtCodigoMaterial.FocusedBaseColor = System.Drawing.Color.White;
             this.txtCodigoMaterial.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(93)))), ((int)(((byte)(169)))));
             this.txtCodigoMaterial.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(93)))), ((int)(((byte)(169)))));
@@ -531,43 +584,45 @@
             this.txtCodigoMaterial.Size = new System.Drawing.Size(111, 26);
             this.txtCodigoMaterial.TabIndex = 65;
             this.txtCodigoMaterial.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtCodigoMaterial.Validating += new System.ComponentModel.CancelEventHandler(this.txtCodigoMaterial_Validating);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(91)))), ((int)(((byte)(164)))));
             this.label8.Location = new System.Drawing.Point(46, 302);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(83, 22);
+            this.label8.Size = new System.Drawing.Size(78, 21);
             this.label8.TabIndex = 67;
             this.label8.Text = "Material:";
             // 
-            // gunaButton1
+            // btnBuscarMaterial
             // 
-            this.gunaButton1.AnimationHoverSpeed = 0.07F;
-            this.gunaButton1.AnimationSpeed = 0.03F;
-            this.gunaButton1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(91)))), ((int)(((byte)(164)))));
-            this.gunaButton1.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton1.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton1.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaButton1.ForeColor = System.Drawing.Color.White;
-            this.gunaButton1.Image = null;
-            this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton1.Location = new System.Drawing.Point(362, 322);
-            this.gunaButton1.Name = "gunaButton1";
-            this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.SkyBlue;
-            this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton1.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton1.OnHoverImage = null;
-            this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton1.Radius = 15;
-            this.gunaButton1.Size = new System.Drawing.Size(60, 34);
-            this.gunaButton1.TabIndex = 85;
-            this.gunaButton1.Text = "...";
-            this.gunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnBuscarMaterial.AnimationHoverSpeed = 0.07F;
+            this.btnBuscarMaterial.AnimationSpeed = 0.03F;
+            this.btnBuscarMaterial.BackColor = System.Drawing.Color.Transparent;
+            this.btnBuscarMaterial.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(91)))), ((int)(((byte)(164)))));
+            this.btnBuscarMaterial.BorderColor = System.Drawing.Color.Black;
+            this.btnBuscarMaterial.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnBuscarMaterial.FocusedColor = System.Drawing.Color.Empty;
+            this.btnBuscarMaterial.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarMaterial.ForeColor = System.Drawing.Color.White;
+            this.btnBuscarMaterial.Image = null;
+            this.btnBuscarMaterial.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnBuscarMaterial.Location = new System.Drawing.Point(362, 322);
+            this.btnBuscarMaterial.Name = "btnBuscarMaterial";
+            this.btnBuscarMaterial.OnHoverBaseColor = System.Drawing.Color.SkyBlue;
+            this.btnBuscarMaterial.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnBuscarMaterial.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnBuscarMaterial.OnHoverImage = null;
+            this.btnBuscarMaterial.OnPressedColor = System.Drawing.Color.Black;
+            this.btnBuscarMaterial.Radius = 15;
+            this.btnBuscarMaterial.Size = new System.Drawing.Size(60, 34);
+            this.btnBuscarMaterial.TabIndex = 85;
+            this.btnBuscarMaterial.Text = "...";
+            this.btnBuscarMaterial.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnBuscarMaterial.Click += new System.EventHandler(this.btnBuscarMaterial_Click);
             // 
             // txtCantidadDeMaterial
             // 
@@ -589,26 +644,28 @@
             this.txtCantidadDeMaterial.Size = new System.Drawing.Size(184, 26);
             this.txtCantidadDeMaterial.TabIndex = 66;
             this.txtCantidadDeMaterial.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtCantidadDeMaterial.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCantidadDeMaterial_KeyPress);
+            this.txtCantidadDeMaterial.Validating += new System.ComponentModel.CancelEventHandler(this.txtCantidadDeMaterial_Validating);
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(91)))), ((int)(((byte)(164)))));
             this.label9.Location = new System.Drawing.Point(46, 363);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(91, 22);
+            this.label9.Size = new System.Drawing.Size(85, 21);
             this.label9.TabIndex = 71;
             this.label9.Text = "Cantidad:";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(91)))), ((int)(((byte)(164)))));
             this.label10.Location = new System.Drawing.Point(235, 363);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(72, 22);
+            this.label10.Size = new System.Drawing.Size(68, 21);
             this.label10.TabIndex = 69;
             this.label10.Text = "Estado:";
             // 
@@ -631,12 +688,92 @@
             this.cbxEstadoMaterialPrestado.Size = new System.Drawing.Size(188, 26);
             this.cbxEstadoMaterialPrestado.TabIndex = 83;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // btnAgregarDataGridView
+            // 
+            this.btnAgregarDataGridView.AnimationHoverSpeed = 0.07F;
+            this.btnAgregarDataGridView.AnimationSpeed = 0.03F;
+            this.btnAgregarDataGridView.BackColor = System.Drawing.Color.Transparent;
+            this.btnAgregarDataGridView.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(91)))), ((int)(((byte)(164)))));
+            this.btnAgregarDataGridView.BorderColor = System.Drawing.Color.Black;
+            this.btnAgregarDataGridView.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnAgregarDataGridView.FocusedColor = System.Drawing.Color.Empty;
+            this.btnAgregarDataGridView.Font = new System.Drawing.Font("Montserrat", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarDataGridView.ForeColor = System.Drawing.Color.White;
+            this.btnAgregarDataGridView.Image = null;
+            this.btnAgregarDataGridView.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnAgregarDataGridView.Location = new System.Drawing.Point(673, 54);
+            this.btnAgregarDataGridView.Name = "btnAgregarDataGridView";
+            this.btnAgregarDataGridView.OnHoverBaseColor = System.Drawing.Color.SkyBlue;
+            this.btnAgregarDataGridView.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnAgregarDataGridView.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnAgregarDataGridView.OnHoverImage = null;
+            this.btnAgregarDataGridView.OnPressedColor = System.Drawing.Color.Black;
+            this.btnAgregarDataGridView.Radius = 15;
+            this.btnAgregarDataGridView.Size = new System.Drawing.Size(42, 34);
+            this.btnAgregarDataGridView.TabIndex = 86;
+            this.btnAgregarDataGridView.Text = "+";
+            this.btnAgregarDataGridView.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnAgregarDataGridView.Click += new System.EventHandler(this.btnAgregarDataGridView_Click);
+            // 
+            // btnEliminarDeDataGridView
+            // 
+            this.btnEliminarDeDataGridView.AnimationHoverSpeed = 0.07F;
+            this.btnEliminarDeDataGridView.AnimationSpeed = 0.03F;
+            this.btnEliminarDeDataGridView.BackColor = System.Drawing.Color.Transparent;
+            this.btnEliminarDeDataGridView.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(91)))), ((int)(((byte)(164)))));
+            this.btnEliminarDeDataGridView.BorderColor = System.Drawing.Color.Black;
+            this.btnEliminarDeDataGridView.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnEliminarDeDataGridView.FocusedColor = System.Drawing.Color.Empty;
+            this.btnEliminarDeDataGridView.Font = new System.Drawing.Font("Montserrat", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarDeDataGridView.ForeColor = System.Drawing.Color.White;
+            this.btnEliminarDeDataGridView.Image = null;
+            this.btnEliminarDeDataGridView.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnEliminarDeDataGridView.Location = new System.Drawing.Point(725, 54);
+            this.btnEliminarDeDataGridView.Name = "btnEliminarDeDataGridView";
+            this.btnEliminarDeDataGridView.OnHoverBaseColor = System.Drawing.Color.SkyBlue;
+            this.btnEliminarDeDataGridView.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnEliminarDeDataGridView.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnEliminarDeDataGridView.OnHoverImage = null;
+            this.btnEliminarDeDataGridView.OnPressedColor = System.Drawing.Color.Black;
+            this.btnEliminarDeDataGridView.Radius = 15;
+            this.btnEliminarDeDataGridView.Size = new System.Drawing.Size(42, 34);
+            this.btnEliminarDeDataGridView.TabIndex = 86;
+            this.btnEliminarDeDataGridView.Text = "-";
+            this.btnEliminarDeDataGridView.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnEliminarDeDataGridView.Click += new System.EventHandler(this.btnEliminarDeDataGridView_Click);
+            // 
+            // cbxSoloCodigo
+            // 
+            this.cbxSoloCodigo.FormattingEnabled = true;
+            this.cbxSoloCodigo.Location = new System.Drawing.Point(473, 177);
+            this.cbxSoloCodigo.Name = "cbxSoloCodigo";
+            this.cbxSoloCodigo.Size = new System.Drawing.Size(121, 21);
+            this.cbxSoloCodigo.TabIndex = 87;
+            // 
+            // lblVerificacionCodigoPrestamo
+            // 
+            this.lblVerificacionCodigoPrestamo.AutoSize = true;
+            this.lblVerificacionCodigoPrestamo.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVerificacionCodigoPrestamo.ForeColor = System.Drawing.Color.Red;
+            this.lblVerificacionCodigoPrestamo.Location = new System.Drawing.Point(52, 106);
+            this.lblVerificacionCodigoPrestamo.Name = "lblVerificacionCodigoPrestamo";
+            this.lblVerificacionCodigoPrestamo.Size = new System.Drawing.Size(41, 15);
+            this.lblVerificacionCodigoPrestamo.TabIndex = 88;
+            this.lblVerificacionCodigoPrestamo.Text = "label11";
+            // 
             // RegistroPrestamoMaterial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1010, 489);
-            this.Controls.Add(this.gunaButton1);
+            this.Controls.Add(this.lblVerificacionCodigoPrestamo);
+            this.Controls.Add(this.btnEliminarDeDataGridView);
+            this.Controls.Add(this.btnAgregarDataGridView);
+            this.Controls.Add(this.btnBuscarMaterial);
             this.Controls.Add(this.btnBuscarAlumno);
             this.Controls.Add(this.dtpFechaPrestamo);
             this.Controls.Add(this.dtpFechaDevolucion);
@@ -669,11 +806,13 @@
             this.Controls.Add(this.txtCodigoPrestamo);
             this.Controls.Add(this.dgvDatosPrestamoMateriales);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.cbxSoloCodigo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RegistroPrestamoMaterial";
             this.Text = "RegistroPrestamoMaterial";
             this.Load += new System.EventHandler(this.RegistroPrestamoMaterial_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatosPrestamoMateriales)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -708,10 +847,19 @@
         private Guna.UI.WinForms.GunaTextBox txtNombreMaterial;
         private Guna.UI.WinForms.GunaTextBox txtCodigoMaterial;
         private System.Windows.Forms.Label label8;
-        private Guna.UI.WinForms.GunaButton gunaButton1;
+        private Guna.UI.WinForms.GunaButton btnBuscarMaterial;
         private Guna.UI.WinForms.GunaTextBox txtCantidadDeMaterial;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private Guna.UI.WinForms.GunaComboBox cbxEstadoMaterialPrestado;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private Guna.UI.WinForms.GunaButton btnEliminarDeDataGridView;
+        private Guna.UI.WinForms.GunaButton btnAgregarDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.ComboBox cbxSoloCodigo;
+        private System.Windows.Forms.Label lblVerificacionCodigoPrestamo;
     }
 }
